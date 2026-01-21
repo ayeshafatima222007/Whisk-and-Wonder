@@ -1,0 +1,194 @@
+/* ------------ MAIN THEME ----------*/
+body {
+    /* cream colour */
+    background-color: #FFFDF5; 
+    /* Sets the text color to a dark coffee brown */
+    color: #4B2C20;  
+    /* this font linked with html files */
+    font-family: 'Montserrat', sans-serif; 
+    /* it will emove the white gaps around edges of the bowser window */
+    margin: 0;  
+    /* to move all the text and images to the centre */
+    text-align: center;       
+}
+/* ------------------------------------- */
+/* ----------NAVIGATION BAR-------------*/
+nav {
+    background-color: #5D4037;
+    /* add space inside the bar */
+    padding: 15px; 
+}
+
+/* THIS IS FOR LINKS INSIDE THE BAR */
+nav a {  
+    color: #FDF5E6;
+    /* This removes the default underline */
+    text-decoration: none;  
+    /* For hoizontal space between links */
+    margin: 0 20px;           
+    font-weight: bold;
+}
+/* -------------------------------------- */
+/* -----------TITLES AND TEXT------------ */
+h1 {
+    color: #3E2723;
+    /* main title size */
+    font-size: 50px;
+    /* for space below below the text */
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #8D6E63;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #5D4037;
+    margin-bottom: 20px;
+}
+
+.text-side h2 {
+    font-size: 2.5rem;      /* Larger*/
+    margin-bottom: 25px;
+}
+
+.text-side p {
+    font-size: 1.2rem;      /* Slightly larger for readability */
+    line-height: 1.8;       /* Adds space between lines of text */
+}
+/* ----------------------------------------- */
+/*  this put the text and image side by side */
+/* ----------------------------------------- */
+.row {
+    /* turns the container into flex board */
+    display: flex;
+    /* text and images leveled vertically */
+    align-items: center; 
+    /* centre the whole goup in the middle. */
+    justify-content: center;
+    /* Puts exactly 80 pixels of space between the text and the image. */
+    gap: 80px;
+    /* cente the entie container */
+    margin: 60px auto;
+    /* pevent from being steached out */
+    max-width: 1200px;
+    padding: 0 40px;        /* Adds space on the sides of the screen */
+}
+.text-side {
+    flex: 1;                /* Takes up 50% of the row */
+    text-align: left;       /* Aligns text left for a professional look */
+    padding-right: 20px;
+}
+
+.image-side {
+    flex: 1;                /* Takes up 50% of the row */
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------------- */
+/* IMAGE STYLING */
+img {
+    width: 100%;
+    max-width: 550px;       /* Keeps image size consistent */
+    height: 500px;          /* Increased height to match longer text */
+    object-fit: cover;      /* Crops the image to fill the 500px height */
+    /* Rounds the sharp corners of the photos */
+    border-radius: 20px;
+    /* add think light frame around picture */
+    border: 8px solid #EEDCC6;
+    /* for shadow  */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------------- */
+/* FORM BOX DESIGN */
+form {
+    background-color: white;
+    width: 420px;          /* Balanced width */
+    padding: 50px;         /* Room for text to breathe */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+    text-align: left;  
+}
+
+/* 7. INPUT FIELDS */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;         /* More space inside the boxes */
+    margin-bottom: 20px;   /* Space between different fields */
+    border: 1px solid #D7CCC8;
+    border-radius: 8px;
+    font-family: inherit;
+    box-sizing: border-box; /* Fixes alignment of boxes */
+}
+
+/* 8. BUTTONS */
+button {
+    background-color: #5D4037; 
+    color: white;             
+    padding: 12px 25px;       
+    border: none;              
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;           /* Full width button */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.banner-wrapper {
+    /* Use the small tray image here */
+    background-image: url('tray_bg.png'); 
+    background-size: cover; 
+    background-position: center;
+    padding: 80px 0; /* Space to make the tray visible */
+    width: 100%;
+}
+
+.banner-wrapper .text-side {
+    background-color: rgba(255, 253, 245, 0.8); /* 80% opaque cream color */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.banner-wrapper .row {
+    background-color: rgba(255, 253, 245, 0.9); /* Stronger cream background */
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Adds a soft shadow */
+    margin-top: 50px;
+}
+
+/* This only affects the Whisk and Wonder title on the home page tray */
+.banner-wrapper h1 {
+    color: #ffffff; /* Pure white */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow to make it pop */
+    margin-top: 20px;
+}
+
+/* This only affects the italic tagline on the home page tray */
+.banner-wrapper p i {
+    color: #FDF5E6; /* a very light cream */
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.scrolling-image {
+    width: 100%;
+    height: auto;
+    /* This overrides earlier img rules (the 550px limit and borders) */
+    /* !important is used so width becomes 100% and remove image rules */
+    max-width: 100% !important; 
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: block; /* Removes tiny gap at bottom */
+}

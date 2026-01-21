@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisk and Wonder</title>
+    <!-- link of font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- link of css file -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!--This is Navigation bar over here-->
+    <nav>
+        <p><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="order.html">Order Now</a> | <a href="contact.html">Contact</a></p>
+    </nav>
+    <!--------------------------->
+    <!-- This is the partition line -->
+    <hr>
+    <!------------------------------------>
+    <h1>Place your Order</h1>
+    <div class="row">
+        <div class="image-side">
+            <img src="order_cakes.jpg" width="600" alt="Our Delicious Cakes">
+        </div>
+
+        <div class="text-side">
+            <p>Fill the form below to order your favourite treats!</p>
+            <form>
+                <p>
+                    <label>Your Name:</label><br>
+                    <input type="text" placeholder="Enter your name">                
+                </p>
+
+                <p>
+                <label>Select Item:</label><br>
+                <select>
+                    <option>Bread</option>
+                    <option>Custom Cakes</option>
+                    <option>Cookies</option>
+                    <option>Donuts</option>
+                    <option>Butter Croissants</option>
+                </select>
+                </p>
+
+                <p>
+                <label>Quantity:</label><br>
+                <input type="number" min="1" value="1">
+                </p>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
